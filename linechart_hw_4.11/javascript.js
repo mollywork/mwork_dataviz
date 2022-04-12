@@ -31,7 +31,7 @@ var myChart = new Chart(ctx, {
             label: 'United States',
             data: [39.41, 39.41, 39.41, 39.41, 48.92, 58.47, 68.07, 72.44, 76.9, 79.59],
             borderColor: 'rgba(225, 13, 227)',
-            tension: 0.1}
+            tension: 0.1},
 
 
         ]
