@@ -48,7 +48,7 @@ var myChart = new Chart(ctx, {
             },
             subtitle: {
                 display: true,
-                text: 'For According to Gapminder's life expectancy data, the United States has had the highest life expectancy compared to the largest countries in the world from 1800 to the present. Meanwhile, India has had the lowest life expectancy during the same time period.  dog'
+                text: 'For all but one year, life expectancy outnumbered dog'
             }
         },
         scales: {
