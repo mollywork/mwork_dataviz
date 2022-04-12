@@ -3,21 +3,45 @@ var myChart = new Chart(ctx, {
     type: 'line',
 
     data: {
-        labels: ['2015', '2016', '2017', '2018', '2019', '2020'],
+        labels: ['1800', '1825', '1850', '1875', '1900', '1925', '1950', '1975', '2000', '2021'],
         datasets: [{
-            label: '# of Apples',
-            data: [12, 19, 3, 5, 2, 3],
+            label: 'Brazil',
+            data: [32, 32, 31.99, 32.06, 32.4, 32.75, 51.78, 63.65, 71.44, 76.33],
             fill: true,
             borderColor: 'rgba(255, 8, 0)',
             backgroundColor: 'rgba(255, 8, 0, 0.1)',
             tension: 0.1},
         {
-            label: '# of Oranges',
-            data: [22, 10, 23, 6, 22, 13],
+            label: 'China',
+            data: [32, 32, 32, 31.96, 31.75, 31.55, 40.73, 63.26, 70.03, 77.4],
             fill: true,
             borderColor: 'rgba(255, 165, 0)',
             backgroundColor: 'rgba(255, 165, 0, 0.1)',
             tension: 0.1}
+
+            {
+                label: 'India',
+                data: [25.44, 25.44, 25.44, 25.11, 18.37, 26.69, 34.92, 51.51, 62.34, 69.77],
+                fill: true,
+                borderColor: 'rgba(255, 165, 0)',
+                backgroundColor: 'rgba(255, 165, 0, 0.1)',
+                tension: 0.1}
+
+                {
+                    label: 'Indonesia',
+                    data: [30, 30, 30, 30.04, 30.24, 30.43, 37.16, 56.49, 67.27, 72.51],
+                    fill: true,
+                    borderColor: 'rgba(255, 165, 0)',
+                    backgroundColor: 'rgba(255, 165, 0, 0.1)',
+                    tension: 0.1}
+
+                    {
+                        label: 'United States',
+                        data: [39.41, 39.41, 39.41, 39.41, 48.92, 58.47, 68.07, 72.44, 76.9, 79.59],
+                        fill: true,
+                        borderColor: 'rgba(255, 165, 0)',
+                        backgroundColor: 'rgba(255, 165, 0, 0.1)',
+                        tension: 0.1}
         ]
     },
     options: {
