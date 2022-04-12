@@ -2,21 +2,15 @@ var ctx = document.getElementById('myChart').getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'bar',
     data: {
-        labels: ['2015', '2016', '2017', '2018', '2019', '2020'],
+        labels: ['Europe & Central Asia', 'America', 'East Asia & Pacific', 'Middle East & North Africa', 'Sub Saharan Africa', 'South Asia'],
         datasets: [{
-            label: '# of Apples',
-            data: [12, 19, 3, 5, 2, 3],
+            label: 'Average of GDP per Capita',
+            data: [20818.45, 18791.13, 14480.3, 13856, 2569, 2505.17],
             backgroundColor: [
                 '#ff0800'
             ]
         },
-        {
-            label: '# of Oranges',
-            data: [22, 10, 23, 6, 22, 13],
-            backgroundColor: [
-                '#FFA500'
-            ],
-        }
+
     ]
     },
     options: {
@@ -24,14 +18,14 @@ var myChart = new Chart(ctx, {
         plugins: {
             title: {
                 display: true,
-                text: 'Apples and Oranges by year',
+                text: 'Europe and Central Asia have highest gross domestic product per capita',
                 font: {
                     size: 18
                 }
             },
             subtitle: {
                 display: true,
-                text: 'For all but one year, oranges outnumbered apples'
+                text: 'Sub Saharan Africa and South Asia have lowest gross domestic products (GDP) per capita.'
             }
         },
         scales: {
