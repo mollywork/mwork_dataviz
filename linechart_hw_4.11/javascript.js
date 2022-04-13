@@ -48,7 +48,7 @@ var myChart = new Chart(ctx, {
             },
             subtitle: {
                 display: true,
-                text: 'For all but one year, life expectancy outnumbered dog'
+                text: 'According to Gapminder's data, the United States has had the highest life expectancy from 1800 to the present. dog'
             }
         },
         scales: {
