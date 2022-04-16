@@ -2,20 +2,15 @@ var ctx = document.getElementById('myChart').getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'bar',
     data: {
-        labels: ['2015', '2016', '2017', '2018', '2019', '2020'],
+        labels: ['White', 'Black', 'Hispanic', 'American Indian', 'Asian'],
         datasets: [{
-            label: '# of Apples',
-            data: [12, 19, 3, 5, 2, 3],
+            label: 'Amount of shooters from 1999 to 2019',
+            data: [61, 40, 6, 3, 1],
             backgroundColor: [
-                '#ff0800'
+                '#446BFA'
             ]
-        },
-        {
-            label: '# of Oranges',
-            data: [22, 10, 23, 6, 22, 13],
-            backgroundColor: [
-                '#FFA500'
-            ],
+
+
         }
     ]
     },
@@ -24,14 +19,14 @@ var myChart = new Chart(ctx, {
         plugins: {
             title: {
                 display: true,
-                text: 'Apples and Oranges by year',
+                text: 'The majority of school shooters are white',
                 font: {
                     size: 18
                 }
             },
             subtitle: {
                 display: true,
-                text: 'For all but one year, oranges outnumbered apples'
+                text: 'According to Washington Post data, from 1999 to 2019, 238 school shootings occurred. Most shooters, 61, were white. Meanwhile, less than 10 shooters were Hispanic, American Indian or Asian.'
             }
         },
         scales: {
