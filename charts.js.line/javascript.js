@@ -3,21 +3,15 @@ var myChart = new Chart(ctx, {
     type: 'line',
 
     data: {
-        labels: ['2015', '2016', '2017', '2018', '2019', '2020'],
+        labels: ['2015', '2016', '2017', '2018', '2019'],
         datasets: [{
-            label: '# of Apples',
-            data: [12, 19, 3, 5, 2, 3],
+            label: 'Number of school shootings',
+            data: [7, 13, 15, 25, 8],
             fill: true,
-            borderColor: 'rgba(255, 8, 0)',
-            backgroundColor: 'rgba(255, 8, 0, 0.1)',
+            borderColor: 'rgba(68, 107, 250)',
+            backgroundColor: 'rgba(68, 107, 250, 0.1)',
             tension: 0.1},
-        {
-            label: '# of Oranges',
-            data: [22, 10, 23, 6, 22, 13],
-            fill: true,
-            borderColor: 'rgba(255, 165, 0)',
-            backgroundColor: 'rgba(255, 165, 0, 0.1)',
-            tension: 0.1}
+
         ]
     },
     options: {
@@ -25,14 +19,14 @@ var myChart = new Chart(ctx, {
         plugins: {
             title: {
                 display: true,
-                text: 'Apples and Oranges by year',
+                text: '2018 had the most school shootings in the past five years',
                 font: {
                     size: 18
                 }
             },
             subtitle: {
                 display: true,
-                text: 'For all but one year, oranges outnumbered apples'
+                text: 'The amount of school shootings gradually increased from 2015 until 2018 when there were 25 school shootings. In 2019, school shootings dropped to eight shootings.'
             }
         },
         scales: {
